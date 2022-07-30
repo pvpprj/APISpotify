@@ -102,8 +102,6 @@ public class playlistTest extends BaseTest {
     @Test   // Update playList 195
     public void shouldBeAbleToUpdatePlayList_195()
     {
-
-        
         Playlist requestPlaylist =  playlistBuilder(generateName() , generateDescription() , false );
         Response response = PlayListApi.update(Dataloader.getInstance().getUpdateplayList(),requestPlaylist);
         assertStatusCode(response.statusCode(),  StatusCode.CODE_200);
