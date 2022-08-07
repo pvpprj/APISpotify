@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+    <listener class-name="com.spotify.outh2.utils.TestNGListener"></listener>
+        
+    </listeners>
+
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Rahul_Gupta1/IdeaProjects/RestAssuredSpotify/src/test/java/com/spotify/outh2/tests/playlistTest_193_196.java">
+        <classes>
+            <class name="com.spotify.outh2.tests.playlistTest">
+                <methods>
+                    <include name="shouldBeAbleToCreatePlayList"/>
+                    <include name="shouldBeAbleToGetPlayList"/>
+                    <include name="shouldBeAbleToUpdatePlayList_195"/>
+                    <include name="shouldBeAbleToCreatePlayListWith_Empty_Name"/>
+                    <include name="shouldBeAbleToCreatePlayListWithExpiredToken"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

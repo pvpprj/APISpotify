@@ -14,6 +14,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.spotify.outh2.api.specBuilder.*;
@@ -22,6 +23,7 @@ import static com.spotify.outh2.utils.FakerUtils.generateName;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+
 
 @Epic("Spotify Oauth 2.0")
 @Feature("PlayList API")
